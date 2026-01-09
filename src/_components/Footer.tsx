@@ -9,6 +9,8 @@ import {
 import logo from "../assets/iot-logo.png";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -185,8 +187,8 @@ export default function Footer() {
               Subscribe to Our Newsletter
             </h3>
             <p className="text-gray-400 mb-4">
-              Get the latest updates on ACCA exams, study tips, and career
-              opportunities.
+              Join the IOT family today to be the first to learn about our juicy
+              offers and updates.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input
@@ -203,7 +205,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-          <p>© 2026 ACCA Excellence. All rights reserved.</p>
+          <p>© {year} ACCA Excellence. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <a href="#" className="hover:text-[#CDDC39] transition-colors">
               Privacy Policy

@@ -5,7 +5,7 @@ import { ArrowRight, Menu } from "lucide-react";
 export default function Hero() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleMenuContent = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prev) => !prev);
   };
 
   return (
@@ -54,7 +54,7 @@ export default function Hero() {
             className="md:hidden text-gray-900 cursor-pointer"
             onClick={handleMenuContent}
           >
-            <Menu size={24} />
+            <Menu size={36} />
           </button>
 
           {isMenuOpen && (
@@ -161,8 +161,8 @@ export default function Hero() {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+      <div className="-z-10 absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+      <div className="-z-10 absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
     </header>
   );
 }

@@ -48,13 +48,16 @@ export default function ValueProposition() {
               ))}
             </div>
 
-            <button className="bg-[#CDDC39] text-gray-900 px-8 py-4 rounded-full hover:bg-[#C0CA33] transition-colors font-medium">
+            <a
+              href="/"
+              className="bg-[#CDDC39] text-gray-900 px-8 py-4 rounded-full hover:bg-[#C0CA33] transition-colors font-medium"
+            >
               Explore Our Features
-            </button>
+            </a>
           </div>
 
           <div className="grid grid-cols-2 gap-6">
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 mt-8">
               <div className="text-4xl mb-4">📚</div>
               <div className="text-2xl font-bold text-[#CDDC39] mb-2">200+</div>
               <div className="text-gray-300">Hours of Content</div>
@@ -68,7 +71,7 @@ export default function ValueProposition() {
               <div className="text-gray-300">Practice Questions</div>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 -mt-8">
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
               <div className="text-4xl mb-4">👨‍🏫</div>
               <div className="text-2xl font-bold text-[#CDDC39] mb-2">50+</div>
               <div className="text-gray-300">Expert Tutors</div>

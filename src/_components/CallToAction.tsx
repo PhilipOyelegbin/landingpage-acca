@@ -17,17 +17,23 @@ export default function CallToAction() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <button className="bg-gray-900 text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-colors flex items-center justify-center gap-2 group">
+                <a
+                  href="/"
+                  className="bg-gray-900 text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-colors flex items-center justify-center gap-2 group"
+                >
                   Enroll Now
                   <ArrowRight
                     className="group-hover:translate-x-1 transition-transform"
                     size={20}
                   />
-                </button>
-                <button className="bg-white text-gray-900 px-8 py-4 rounded-full hover:bg-gray-50 transition-colors flex items-center justify-center gap-2">
+                </a>
+                <a
+                  href="/"
+                  className="bg-white text-gray-900 px-8 py-4 rounded-full hover:bg-gray-50 transition-colors flex items-center justify-center gap-2"
+                >
                   <Calendar size={20} />
-                  Book a Free Demo
-                </button>
+                  Book a Free Session
+                </a>
               </div>
 
               <div className="flex items-center gap-4 text-gray-900">
@@ -63,9 +69,7 @@ export default function CallToAction() {
               <Phone className="text-gray-900" size={24} />
             </div>
             <h3 className="font-bold text-gray-900 mb-2">Call Us</h3>
-            <p className="text-gray-600 text-sm mb-3">
-              Speak with our admissions team
-            </p>
+            <p className="text-gray-600 text-sm mb-3">Speak with our team</p>
             <a
               href="tel:+1234567890"
               className="text-[rgb(94,102,8)] hover:text-[#AFB42B] font-medium"
@@ -95,10 +99,13 @@ export default function CallToAction() {
               <Calendar className="text-gray-900" size={24} />
             </div>
             <h3 className="font-bold text-gray-900 mb-2">Visit Us</h3>
-            <p className="text-gray-600 text-sm mb-3">Schedule a campus tour</p>
-            <button className="text-[rgb(94,102,8)] hover:text-[#AFB42B] font-medium">
+            <p className="text-gray-600 text-sm mb-3">Schedule a session</p>
+            <a
+              href="/"
+              className="text-[rgb(94,102,8)] hover:text-[#AFB42B] font-medium"
+            >
               Book Appointment
-            </button>
+            </a>
           </div>
         </div>
       </div>
