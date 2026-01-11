@@ -1,16 +1,14 @@
 @import "tailwindcss";
-@layer base;
-@layer components;
-@layer utilities;
+@tailwind utilities;
 
-@base {
+@layer base {
   *,
   ::before,
   ::after {
     box-sizing: border-box;
     scroll-behavior: smooth;
     line-height: 1.5;
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
   }
 

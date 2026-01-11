@@ -1,8 +1,9 @@
 import { ArrowRight, Calendar, Phone, Mail } from "lucide-react";
+import mobileapp from "../assets/mobileapp.png";
 
 export default function CallToAction() {
   return (
-    <section className="py-16 sm:py-24 bg-white">
+    <section className="pt-16 sm:pt-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main CTA */}
         <div className="bg-linear-to-r from-[#CDDC39] to-[#AFB42B] rounded-3xl overflow-hidden">
@@ -107,6 +108,32 @@ export default function CallToAction() {
               Book Appointment
             </a>
           </div>
+        </div>
+      </div>
+
+      <div className="container pt-16 flex flex-col md:flex-row items-center gap-8">
+        <img
+          src={mobileapp}
+          className="w-full md:w-1/2"
+          alt="Mobile application cover"
+        />
+        <div className="w-full md:w-1/2 p-5 md:p-0 text-center md:text-left">
+          <h3 className="text-3xl font-bold mb-4 text-gray-900">
+            Prepare for your exams easily, anytime and anywhere with just one
+            app.
+          </h3>
+          <p className="text-lg mb-8 text-gray-800">
+            ICAN Online Tutors App is now available on Google Playstore And
+            Apple Store
+          </p>
+          <a
+            href="/"
+            className="bg-[#CDDC39] px-8 py-4 rounded-full block w-fit mx-auto text-gray-900 font-medium hover:bg-[#AFB42B] transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Downlaod Now
+          </a>
         </div>
       </div>
     </section>

@@ -196,7 +196,7 @@ export default function Footer() {
                 placeholder="Enter your email"
                 className="flex-1 px-4 py-3 rounded-full bg-gray-800 border border-gray-700 focus:outline-none focus:border-[#CDDC39] text-white"
               />
-              <button className="bg-[#CDDC39] text-gray-900 px-8 py-3 rounded-full hover:bg-[#C0CA33] transition-colors font-medium">
+              <button className="cursor-pointer bg-[#CDDC39] text-gray-900 px-8 py-3 rounded-full hover:bg-[#C0CA33] transition-colors font-medium">
                 Subscribe
               </button>
             </div>
@@ -205,7 +205,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-          <p>© {year} ACCA Excellence. All rights reserved.</p>
+          <p>&copy; {year} ICAN Online Tutors. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <a href="#" className="hover:text-[#CDDC39] transition-colors">
               Privacy Policy
